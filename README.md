@@ -4,6 +4,8 @@
 
 „Ich gehe / Ich bin da“: Licht, Heizung und Kamera-Push nach Anwesenheit.
 
+![Dashboard](https://raw.githubusercontent.com/DerGnom1977/ha-anwesenheit/main/images/dashboard.jpg)
+
 Python-Integration für Home Assistant (HACS). Sie ersetzt das bisherige YAML-Paket
 `anwesenheit/packages/anwesenheit.yaml`: Einstellungen sind jetzt eigene Entitäten (Schalter, Zahlen, Auswahlfelder,
 Uhrzeiten), die Logik läuft in Python statt in Automationen und Skripten.
