@@ -1,0 +1,14 @@
+gehen:
+  fields:
+    erzwingen:
+      selector:
+        text: null
+    test:
+      selector:
+        text: null
+kommen:
+  fields:
+    test:
+      selector:
+        text: null
+testlauf: {}

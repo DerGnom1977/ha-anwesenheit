@@ -1,0 +1,69 @@
+# Dashboard für Home Assistant: Einstellungen → Dashboards → Dashboard hinzufügen,
+# dann oben rechts ⋮ → Raw-Konfigurationseditor und diesen Inhalt einfügen.
+title: Anwesenheit
+views:
+- title: Anwesenheit
+  path: anwesenheit
+  icon: mdi:view-dashboard
+  cards:
+  - type: entities
+    title: Status
+    entities:
+    - sensor.anwesenheit_anzeige
+    - sensor.anwesenheit_anzahl_zuhause
+    - select.anwesenheit_modus
+    - select.anwesenheit_wer
+    - number.anwesenheit_verzoegerung
+  - type: entities
+    title: Szenen
+    entities:
+    - button.anwesenheit_ich_gehe
+    - button.anwesenheit_ich_gehe_erzwingen
+    - button.anwesenheit_ich_bin_da
+    - button.anwesenheit_testlauf
+  - type: entities
+    title: Licht beim Gehen
+    entities:
+    - switch.anwesenheit_licht_wohnzimmer_gehen
+    - switch.anwesenheit_licht_ecke_gehen
+    - switch.anwesenheit_licht_sofa_gehen
+    - switch.anwesenheit_licht_esszimmer_gehen
+    - switch.anwesenheit_licht_tv_gehen
+    - switch.anwesenheit_licht_h618c_gehen
+    - switch.anwesenheit_licht_flur_gehen
+  - type: entities
+    title: Licht beim Kommen
+    entities:
+    - switch.anwesenheit_nur_dunkel
+    - number.anwesenheit_helligkeit
+    - switch.anwesenheit_licht_wohnzimmer_kommen
+    - switch.anwesenheit_licht_ecke_kommen
+    - switch.anwesenheit_licht_sofa_kommen
+    - switch.anwesenheit_licht_esszimmer_kommen
+    - switch.anwesenheit_licht_tv_kommen
+    - switch.anwesenheit_licht_h618c_kommen
+    - switch.anwesenheit_licht_flur_kommen
+  - type: entities
+    title: Heizung
+    entities:
+    - switch.anwesenheit_heizung_aktiv
+    - switch.anwesenheit_heizung_wiederherstellen
+    - number.anwesenheit_heizung_wohnzimmer_weg
+    - number.anwesenheit_heizung_wohnzimmer_da
+    - number.anwesenheit_heizung_wohnzimmer_gemerkt
+    - number.anwesenheit_heizung_bad_weg
+    - number.anwesenheit_heizung_bad_da
+    - number.anwesenheit_heizung_bad_gemerkt
+  - type: entities
+    title: Kamera und Warnungen
+    entities:
+    - switch.anwesenheit_kamera_push
+    - switch.anwesenheit_kamera_weitere
+    - switch.anwesenheit_warn_haustuer
+    - switch.anwesenheit_warn_drucker
+  - type: entities
+    title: Meldungen
+    entities:
+    - switch.anwesenheit_ziel_person1
+    - switch.anwesenheit_ziel_person2
+    - button.anwesenheit_standardwerte

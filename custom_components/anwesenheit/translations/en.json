@@ -1,0 +1,69 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Anwesenheit",
+        "description": "„Ich gehe / Ich bin da“: Licht, Heizung und Kamera-Push nach Anwesenheit.",
+        "data": {
+          "notify_person1": "Notify-Dienst Person 1",
+          "notify_person2": "Notify-Dienst Person 2",
+          "person_person1": "Person Person 1",
+          "person_person2": "Person Person 2",
+          "lock": "Haustür-Schloss (für Warnung)",
+          "drucker": "Drucker druckt (für Warnung)",
+          "sonne": "Sonne"
+        }
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Es ist nur eine Instanz erlaubt."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Anwesenheit",
+        "data": {
+          "notify_person1": "Notify-Dienst Person 1",
+          "notify_person2": "Notify-Dienst Person 2",
+          "person_person1": "Person Person 1",
+          "person_person2": "Person Person 2",
+          "lock": "Haustür-Schloss (für Warnung)",
+          "drucker": "Drucker druckt (für Warnung)",
+          "sonne": "Sonne"
+        }
+      }
+    }
+  },
+  "services": {
+    "gehen": {
+      "name": "Ich gehe",
+      "description": "Licht aus, Heizung runter. Läuft nur, wenn sonst niemand da ist (außer bei „erzwingen“).",
+      "fields": {
+        "erzwingen": {
+          "name": "Trotzdem ausführen",
+          "description": "Auch ausführen, wenn noch jemand zuhause ist."
+        },
+        "test": {
+          "name": "Testlauf",
+          "description": "Nur melden, nichts schalten."
+        }
+      }
+    },
+    "kommen": {
+      "name": "Ich bin da",
+      "description": "Licht an, Heizung hoch.",
+      "fields": {
+        "test": {
+          "name": "Testlauf",
+          "description": "Nur melden, nichts schalten."
+        }
+      }
+    },
+    "testlauf": {
+      "name": "Testlauf",
+      "description": "Zeigt per Push, was „Ich gehe“ und „Ich bin da“ jetzt tun würden.",
+      "fields": {}
+    }
+  }
+}
