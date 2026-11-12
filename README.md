@@ -1,5 +1,7 @@
 # Anwesenheit
 
+![Anwesenheit](https://raw.githubusercontent.com/DerGnom1977/ha-anwesenheit/main/images/preview.png)
+
 „Ich gehe / Ich bin da“: Licht, Heizung und Kamera-Push nach Anwesenheit.
 
 Python-Integration für Home Assistant (HACS). Sie ersetzt das bisherige YAML-Paket
